@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\\DeskPresenceService\\DeskPresenceService.csproj" />
+    <None Include="..\\DeskPresenceService\\credentials.json"
+          Link="credentials.json"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\\DeskPresenceService\\haarcascade_frontalface_default.xml"
+          Link="haarcascade_frontalface_default.xml"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\\DeskPresenceService\\appsettings.json"
+          Link="appsettings.json"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
