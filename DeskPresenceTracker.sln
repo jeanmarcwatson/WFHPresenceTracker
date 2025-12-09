@@ -1,10 +1,13 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31912.275
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskPresenceService", "DeskPresenceService\\DeskPresenceService.csproj", "{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskPresenceService", "DeskPresenceService\DeskPresenceService.csproj", "{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskPresenceConsole", "DeskPresenceConsole\\DeskPresenceConsole.csproj", "{1D1D0FCB-90ED-4F10-B10A-861AF87FE556}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskPresenceConsole", "DeskPresenceConsole\DeskPresenceConsole.csproj", "{1D1D0FCB-90ED-4F10-B10A-861AF87FE556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskPresenceTray", "DeskPresenceTray\DeskPresenceTray.csproj", "{7F0E79E6-5748-A79C-FB88-16E5E94FCA49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,8 +23,15 @@ Global
 		{1D1D0FCB-90ED-4F10-B10A-861AF87FE556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D1D0FCB-90ED-4F10-B10A-861AF87FE556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D1D0FCB-90ED-4F10-B10A-861AF87FE556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0E79E6-5748-A79C-FB88-16E5E94FCA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0E79E6-5748-A79C-FB88-16E5E94FCA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0E79E6-5748-A79C-FB88-16E5E94FCA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0E79E6-5748-A79C-FB88-16E5E94FCA49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0BAB78B-C195-4A4D-B273-3690834BDE9C}
 	EndGlobalSection
 EndGlobal
