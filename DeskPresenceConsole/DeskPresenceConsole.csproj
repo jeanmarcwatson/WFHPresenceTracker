@@ -2,9 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- Make sure this is NOT a self-contained app -->
+    <SelfContained>false</SelfContained>
+    <!-- No RuntimeIdentifier here; it's a normal framework-dependent exe -->
   </PropertyGroup>
 
   <ItemGroup>

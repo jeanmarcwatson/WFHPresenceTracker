@@ -1,35 +1,48 @@
-﻿using System.Diagnostics;
-using System.Text.RegularExpressions;
+﻿using System.Net.NetworkInformation;
+using System.Net.Sockets;
 
 namespace DeskPresenceService;
 
 public class WifiHelper
 {
-    public bool IsOnHomeNetwork(string expectedSsid)
+    public bool IsOnHomeNetwork(string expectedGatewayIp)
     {
-        string? ssid = GetCurrentSsid();
-        if (ssid == null) return false;
-        return string.Equals(ssid, expectedSsid, StringComparison.OrdinalIgnoreCase);
-    }
+        if (string.IsNullOrWhiteSpace(expectedGatewayIp))
+            return true;
 
-    private string? GetCurrentSsid()
-    {
-        var psi = new ProcessStartInfo
+        string expected = expectedGatewayIp.Trim();
+
+        try
         {
-            FileName = "netsh",
-            Arguments = "wlan show interfaces",
-            UseShellExecute = false,
-            RedirectStandardOutput = true,
-            CreateNoWindow = true
-        };
+            foreach (var nic in NetworkInterface.GetAllNetworkInterfaces())
+            {
+                // Only consider active Wi-Fi
+                if (nic.NetworkInterfaceType != NetworkInterfaceType.Wireless80211)
+                    continue;
 
-        using var proc = Process.Start(psi);
-        if (proc == null) return null;
+                if (nic.OperationalStatus != OperationalStatus.Up)
+                    continue;
 
-        string output = proc.StandardOutput.ReadToEnd();
-        proc.WaitForExit();
+                var ipProps = nic.GetIPProperties();
+                foreach (var gw in ipProps.GatewayAddresses)
+                {
+                    if (gw.Address.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        string gateway = gw.Address.ToString();
+                        if (string.Equals(gateway, expected, StringComparison.OrdinalIgnoreCase))
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        catch
+        {
+            // If something unexpected happens, don't break WFH logic
+            return true;
+        }
 
-        var match = Regex.Match(output, @"SSID\s*:\s*(.+)", RegexOptions.IgnoreCase);
-        return match.Success ? match.Groups[1].Value.Trim() : null;
+        return false;
     }
 }
