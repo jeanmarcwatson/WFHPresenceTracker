@@ -63,7 +63,6 @@ namespace DeskPresenceService
             _reportTime = TimeSpan.Parse(
                 reportingSection.GetValue<string>("DailyScheduleTime", "02:00"));
 
-            // Logging folder: prefer Path, fall back to LogFolder, then default
             _logFolder =
                 loggingSection.GetValue<string>("Path",
                     loggingSection.GetValue<string>(
@@ -82,7 +81,6 @@ namespace DeskPresenceService
             {
                 try
                 {
-                    // Day rollover
                     if (DateTime.Today != _today)
                     {
                         _today = DateTime.Today;
@@ -137,42 +135,60 @@ namespace DeskPresenceService
                         WriteMainLog($"Sampling presence at {now:yyyy-MM-dd HH:mm:ss}.");
                         _logger.LogInformation("Sampling presence at {Time}.", now);
 
-                        bool present = _webcam.IsUserPresent(_detectionWindow);
+                        var status = _webcam.DetectPresence(_detectionWindow);
 
-                        // Timeline log: 09:05 Present / Away
-                        WriteTimeline(present ? "Present" : "Away");
+                        // Timeline text based on status
+                        string timelineState = status switch
+                        {
+                            PresenceDetectionStatus.FaceDetected => "Present",
+                            PresenceDetectionStatus.CameraBusyAssumedPresent => "Present (camera busy)",
+                            _ => "Away"
+                        };
+
+                        WriteTimeline(timelineState);
+
+                        bool present = status != PresenceDetectionStatus.Away;
 
                         if (present)
                         {
                             _positiveSamplesToday++;
-                            WriteMainLog(
-                                $"Face detected. Positive samples today = {_positiveSamplesToday}.");
-                            _logger.LogInformation(
-                                "Face detected. Positive samples today = {Count}.",
-                                _positiveSamplesToday);
+
+                            if (status == PresenceDetectionStatus.CameraBusyAssumedPresent)
+                            {
+                                WriteMainLog(
+                                    $"Camera appears busy (meeting). Treating as Present. Positive samples today = {_positiveSamplesToday}.");
+                                _logger.LogInformation(
+                                    "Camera busy; treating as present. Positive samples today = {Count}.",
+                                    _positiveSamplesToday);
+                            }
+                            else
+                            {
+                                WriteMainLog(
+                                    $"Face detected. Positive samples today = {_positiveSamplesToday}.");
+                                _logger.LogInformation(
+                                    "Face detected. Positive samples today = {Count}.",
+                                    _positiveSamplesToday);
+                            }
                         }
                         else
                         {
-                            WriteMainLog("No face detected this sample.");
-                            _logger.LogInformation("No face detected this sample.");
+                            WriteMainLog("No presence detected this sample (Away).");
+                            _logger.LogInformation("No presence detected this sample (Away).");
                         }
 
                         if (_positiveSamplesToday >= _dailyPresenceThreshold)
                         {
                             WriteMainLog(
-                                $"Threshold reached ({_dailyPresenceThreshold}); " +
-                                $"ensuring calendar event for {_today:yyyy-MM-dd}.");
+                                $"Threshold reached ({_dailyPresenceThreshold}); ensuring calendar event for {_today:yyyy-MM-dd}.");
                             _logger.LogInformation(
                                 "Threshold reached; ensuring calendar event for today {Date}.",
                                 _today);
 
                             await _calendarClient.EnsureHomeDayEventAsync(_today);
 
-                            // Prevent re-writing events all day
                             _positiveSamplesToday = int.MinValue / 2;
                         }
 
-                        // EOFY reporting window
                         if (Math.Abs((now.TimeOfDay - _reportTime).TotalMinutes) < 1)
                         {
                             WriteMainLog("Running EOFY report check.");
@@ -213,7 +229,7 @@ namespace DeskPresenceService
             }
             catch
             {
-                // Don't crash the service because logging failed
+                // don't crash if logging fails
             }
         }
 
@@ -230,7 +246,7 @@ namespace DeskPresenceService
             }
             catch
             {
-                // Ignore timeline logging errors too
+                // ignore timeline errors as well
             }
         }
     }
