@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System;
+using System.IO;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -14,7 +16,12 @@ namespace DeskPresenceService
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                // Default config already loads appsettings.json from the exe folder
+                // NOTE: we are not using UseWindowsService() – you run as console / scheduled task
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                {
+                    config.SetBasePath(AppContext.BaseDirectory);
+                    config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+                })
                 .ConfigureLogging(logging =>
                 {
                     logging.ClearProviders();
@@ -26,7 +33,13 @@ namespace DeskPresenceService
                 })
                 .ConfigureServices((context, services) =>
                 {
-                    // DI registrations for the worker and helpers
+                    // Configure FileLog folder from appsettings
+                    var logFolder = context.Configuration.GetValue<string>(
+                        "Logging:LogFolder",
+                        Path.Combine(AppContext.BaseDirectory, "Logs"));
+
+                    FileLog.LogFolder = logFolder;
+
                     services.AddSingleton<CalendarClient>();
                     services.AddSingleton<WebcamPresenceDetector>();
                     services.AddSingleton<WifiHelper>();

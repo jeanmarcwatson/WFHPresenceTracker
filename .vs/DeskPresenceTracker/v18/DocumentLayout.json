@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Dev\\WFHPresenceTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9C8D2AE-19A5-4B04-928E-172F0B395445}|Solution Items{C9C8D2AE-19A5-4B04-928E-172F0B395445}|C:\\Dev\\WFHPresenceTracker\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{C9C8D2AE-19A5-4B04-928E-172F0B395445}|Solution Items{C9C8D2AE-19A5-4B04-928E-172F0B395445}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|c:\\dev\\wfhpresencetracker\\deskpresenceservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|solutionrelative:deskpresenceservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|c:\\dev\\wfhpresencetracker\\deskpresenceservice\\webcampresencedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|solutionrelative:deskpresenceservice\\webcampresencedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|c:\\dev\\wfhpresencetracker\\deskpresenceservice\\presenceworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|solutionrelative:deskpresenceservice\\presenceworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|c:\\dev\\wfhpresencetracker\\deskpresenceservice\\calendarclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|solutionrelative:deskpresenceservice\\calendarclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|c:\\dev\\wfhpresencetracker\\deskpresenceservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,6 +17,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|c:\\dev\\wfhpresencetracker\\deskpresenceservice\\filelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|solutionrelative:deskpresenceservice\\filelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|c:\\dev\\wfhpresencetracker\\deskpresenceservice\\webcampresencedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|solutionrelative:deskpresenceservice\\webcampresencedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C8D2AE-19A5-4B04-928E-172F0B395445}|Solution Items{C9C8D2AE-19A5-4B04-928E-172F0B395445}|C:\\Dev\\WFHPresenceTracker\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{C9C8D2AE-19A5-4B04-928E-172F0B395445}|Solution Items{C9C8D2AE-19A5-4B04-928E-172F0B395445}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|c:\\dev\\wfhpresencetracker\\deskpresenceservice\\calendarclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|solutionrelative:deskpresenceservice\\calendarclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}|DeskPresenceService\\DeskPresenceService.csproj|c:\\dev\\wfhpresencetracker\\deskpresenceservice\\wifihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -82,55 +82,17 @@
               "RelativeToolTip": "README.md",
               "ViewState": "AgIAAMEAAAAAAAAAAAAcwOgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-12-11T01:36:47.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T01:36:47.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WebcamPresenceDetector.cs",
-              "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\WebcamPresenceDetector.cs",
-              "RelativeDocumentMoniker": "DeskPresenceService\\WebcamPresenceDetector.cs",
-              "ToolTip": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\WebcamPresenceDetector.cs",
-              "RelativeToolTip": "DeskPresenceService\\WebcamPresenceDetector.cs",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAwwAABAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T11:01:01.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CalendarClient.cs",
-              "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\CalendarClient.cs",
-              "RelativeDocumentMoniker": "DeskPresenceService\\CalendarClient.cs",
-              "ToolTip": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\CalendarClient.cs",
-              "RelativeToolTip": "DeskPresenceService\\CalendarClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T07:52:39.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FileLog.cs",
-              "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\FileLog.cs",
-              "RelativeDocumentMoniker": "DeskPresenceService\\FileLog.cs",
-              "ToolTip": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\FileLog.cs",
-              "RelativeToolTip": "DeskPresenceService\\FileLog.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAhwB0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T06:44:57.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PresenceWorker.cs",
               "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\PresenceWorker.cs",
               "RelativeDocumentMoniker": "DeskPresenceService\\PresenceWorker.cs",
               "ToolTip": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\PresenceWorker.cs",
               "RelativeToolTip": "DeskPresenceService\\PresenceWorker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAIAwwH0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-10T04:18:49.08Z",
               "EditorCaption": ""
@@ -149,15 +111,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\Program.cs",
               "RelativeDocumentMoniker": "DeskPresenceService\\Program.cs",
               "ToolTip": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\Program.cs",
               "RelativeToolTip": "DeskPresenceService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwCQAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T01:23:27.692Z"
+              "WhenOpened": "2025-12-10T01:23:27.692Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -197,16 +160,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\appsettings.json",
               "RelativeDocumentMoniker": "DeskPresenceService\\appsettings.json",
               "ToolTip": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\appsettings.json",
               "RelativeToolTip": "DeskPresenceService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-09T22:18:04.498Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebcamPresenceDetector.cs",
+              "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\WebcamPresenceDetector.cs",
+              "RelativeDocumentMoniker": "DeskPresenceService\\WebcamPresenceDetector.cs",
+              "ToolTip": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\WebcamPresenceDetector.cs",
+              "RelativeToolTip": "DeskPresenceService\\WebcamPresenceDetector.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAwwJsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T11:01:01.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileLog.cs",
+              "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\FileLog.cs",
+              "RelativeDocumentMoniker": "DeskPresenceService\\FileLog.cs",
+              "ToolTip": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\FileLog.cs",
+              "RelativeToolTip": "DeskPresenceService\\FileLog.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAwwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T06:44:57.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CalendarClient.cs",
+              "DocumentMoniker": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\CalendarClient.cs",
+              "RelativeDocumentMoniker": "DeskPresenceService\\CalendarClient.cs",
+              "ToolTip": "C:\\Dev\\WFHPresenceTracker\\DeskPresenceService\\CalendarClient.cs",
+              "RelativeToolTip": "DeskPresenceService\\CalendarClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T07:52:39.274Z"
             },
             {
               "$type": "Document",
