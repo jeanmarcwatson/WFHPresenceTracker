@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11222.15 d18.0
+VisualStudioVersion = 18.0.11222.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskPresenceService", "DeskPresenceService\DeskPresenceService.csproj", "{D5A27E86-53EC-4722-B4D3-5B81D95E3C35}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskPresenceConsole", "DeskPresenceConsole\DeskPresenceConsole.csproj", "{1D1D0FCB-90ED-4F10-B10A-861AF87FE556}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskPresenceTray", "DeskPresenceTray\DeskPresenceTray.csproj", "{7F0E79E6-5748-A79C-FB88-16E5E94FCA49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9C8D2AE-19A5-4B04-928E-172F0B395445}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
